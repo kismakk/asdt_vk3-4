@@ -106,7 +106,7 @@ def throw_tomato(player: Player):
             tomato_label.after(500, tomato_label.destroy) # Destroying the tomato after 500 ms
             return 
         
-        # Conditio to check if the tomato flew out of bounds and destroying it
+        # Condition to check if the tomato flew out of bounds and destroying it
         if (current_x < 0 or current_x > WINDOW_X or current_y < 0 or current_y > WINDOW_Y):
             tomato_label.destroy()
             return
